@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import MainContainer from './components/MainContainer';
 
 function App() {
   return (
@@ -8,9 +9,12 @@ function App() {
         <div className="container">
           <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
             <div className="logo">
-              <span className="logo-symbol">*</span> KAVIA AI
+              <span className="logo-symbol">🌍</span> EvolvLingua
             </div>
-            <button className="btn">Template Button</button>
+            <div className="nav-links">
+              <a href="#about" className="nav-link">About</a>
+              <a href="#contact" className="nav-link">Contact</a>
+            </div>
           </div>
         </div>
       </nav>
@@ -18,16 +22,17 @@ function App() {
       <main>
         <div className="container">
           <div className="hero">
-            <div className="subtitle">AI Workflow Manager Template</div>
+            <div className="subtitle">Spanish Learning Application</div>
             
-            <h1 className="title">main_container_for_evolvlingua</h1>
+            <h1 className="title">Learn Spanish with EvolvLingua</h1>
             
             <div className="description">
-              Start building your application.
+              Interactive lessons and quizzes to help you learn Spanish from beginner to intermediate level.
+              Progress at your own pace and track your learning journey.
             </div>
-            
-            <button className="btn btn-large">Button</button>
           </div>
+          
+          <MainContainer />
         </div>
       </main>
     </div>
